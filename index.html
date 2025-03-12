@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Page</title>
+  </head>
+  <body>
+    <header>
+      <!-- Intro to the Page -->
+      <h1>Welcome to advanced HTML practice</h1>
+      <p>
+        In this web page I get to practice the use of multimedia elements, table
+        elements and form elements.
+      </p>
+    </header>
+
+    <main>
+      <!-- Page Content -->
+      <h3>Lists</h3>
+      <p>These are the elements that we will use in our web page:</p>
+      <ol type="i">
+        <li>An image element</li>
+        <li>A table element with rows</li>
+        <li>A registration form</li>
+        <li>A radio button</li>
+        <li>A text input for email, passwords and names</li>
+      </ol>
+
+      <h3>Multimedia</h3>
+      <p>
+        We linked an image from
+        <a href="https://www.pexels.com/" target="_blank">pexels.com</a>
+      </p>
+      <img
+        src="https://images.pexels.com/photos/29311799/pexels-photo-29311799/free-photo-of-coffee-cup-on-walnut-background.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+        alt="A picture of freshly grounded coffee from pexels.com"
+      />
+
+      <p>We would love for you to check out some of our media content</p>
+      <audio src="sound.mp3" controls muted>
+        Your browser doesn't support audio elements
+      </audio>
+      <br />
+      <video
+        src="https://videos.pexels.com/video-files/1943483/1943483-uhd_2560_1440_25fps.mp4"
+        width="320"
+        height="240"
+        controls
+      >
+        The link to the video must have expired or video isn't supported on the
+        browser
+      </video>
+
+      <h3>Table</h3>
+      <h4>A table of five contacts</h4>
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Address</th>
+          <th>Mobile</th>
+          <th>Email</th>
+        </tr>
+        <tr>
+          <th>John Doe</th>
+          <td>123 Main St, NY</td>
+          <td>+1 234 567 8901</td>
+          <td>johndoe@example.com</td>
+        </tr>
+        <tr>
+          <th>Jane Smith</th>
+          <td>456 Elm St, CA</td>
+          <td>+1 987 654 3210</td>
+          <td>janesmith@example.com</td>
+        </tr>
+        <tr>
+          <th>Michael Brown</th>
+          <td>789 Oak St, TX</td>
+          <td>+1 555 666 7777</td>
+          <td>michaelb@example.com</td>
+        </tr>
+        <tr>
+          <th>Emily Davis</th>
+          <td>321 Pine St, FL</td>
+          <td>+1 444 888 9999</td>
+          <td>emilyd@example.com</td>
+        </tr>
+        <tr>
+          <th>Chris Wilson</th>
+          <td>654 Maple St, WA</td>
+          <td>+1 123 456 7890</td>
+          <td>chrisw@example.com</td>
+        </tr>
+      </table>
+
+      <h3>Registration Form</h3>
+      <p>Our clients should register in the form below</p>
+      <form>
+        <!-- Name Field -->
+        <label for="name">Full Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your full name"
+          required
+        />
+
+        <br /><br />
+
+        <!-- Email Field -->
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+        <br /><br />
+
+        <!-- Password Field -->
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter your password"
+          minlength="6"
+          required
+        />
+        <br /><br />
+
+        <!-- Date Field -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required />
+        <br /><br />
+
+        <!-- Dropdown Menu -->
+        <label for="country">Select Your Country:</label>
+        <select id="country" name="country" required>
+          <option value="" disabled selected>Choose a country</option>
+          <option value="usa">United States</option>
+          <option value="canada">Canada</option>
+          <option value="uk">United Kingdom</option>
+          <option value="australia">Australia</option>
+        </select>
+        <br /><br />
+
+        <!-- Radio Buttons -->
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required />
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="female" required />
+        <label for="female">Female</label>
+        <br /><br />
+
+        <!-- Checkboxes -->
+        <label>Interests:</label>
+        <input type="checkbox" id="coding" name="interests" value="coding" />
+        <label for="coding">Coding</label>
+
+        <input type="checkbox" id="music" name="interests" value="music" />
+        <label for="music">Music</label>
+
+        <input type="checkbox" id="sports" name="interests" value="sports" />
+        <label for="sports">Sports</label>
+        <br /><br />
+
+        <!-- Submit Button -->
+        <button type="submit">Register</button>
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy 2025 GeoKoder. All Right reserved</p>
+    </footer>
+  </body>
+</html>
